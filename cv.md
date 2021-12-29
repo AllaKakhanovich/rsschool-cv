@@ -2,7 +2,7 @@
 
 ## Contacts
   * My Contact Info:
-       + E-mail: alakakhanovich@gmail.com
+       + E-mail: allakakhanovich@gmail.com
        + GitHub: AllaKakhanovich
        + Telegram: Alla Kakhanovich
        + Phone: +375 44 722-57-13
