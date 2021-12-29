@@ -19,6 +19,18 @@
   3. JavaScript (in process…)
 
 ## Code Examples
+```
+function toCamelCase(str){
+  if (!str) {
+    return '';
+  }
+ const strRepl = str.replace(/_/g, '-')
+ const arr = strRepl.split('-');
+ const newArr = arr.map((currentValue, index) => index === 0 ? currentValue : currentValue[0].toUpperCase() + currentValue.slice(1));
+ const newStr = newArr.join('');
+ return newStr;
+}
+```
 
 ## Education
 	Belarusian National Technical University
