@@ -75,7 +75,23 @@
           <p class="heading-number">4</p>
           <h2><a name="сode">Code Examples</a></h2>
         </div>
-        <p class="text">**************************</p>
+        <div class="text">
+          <pre>
+  function toCamelCase(str){
+    if (!str) {
+      return '';
+    }
+  const strRepl = str.replace(/_/g, '-')
+  const arr = strRepl.split('-');
+  const newArr = arr.map((currentValue, index) =>
+    index === 0 ? currentValue :
+    currentValue[0].toUpperCase() +
+    currentValue.slice(1));
+  const newStr = newArr.join('');
+  return newStr;
+  }           
+          </pre>
+        </div>
         <div class="link-to-cv">Link to project <a href="#">CV</a></div>
       </section>
       <section class="item">
