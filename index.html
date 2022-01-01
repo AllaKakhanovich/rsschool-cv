@@ -34,12 +34,13 @@
       </nav>
     </div>
   </header>
+  
   <main>
     <div class="content-wrapper">
       <section class="item">
         <div class="heading-content">
           <p class="heading-number">1</p>
-          <h2><a name="contacts">My Contacts Info</a></h2>
+          <h2><a id="contacts">My Contacts Info</a></h2>
         </div>
         <ul class="text">
           <li>E-mail: allakakhanovich@gmail.com</li>	
@@ -52,7 +53,7 @@
       <section class="item">
         <div class="heading-content">
           <p class="heading-number">2</p>
-          <h2><a name="about">About Me</a></h2>
+          <h2><a id="about">About Me</a></h2>
         </div>
         <p class="text">I am 51 years old. I think that you always need to get new knowledge and work with new technologies.
            I want to fulfill my dream  - to gain knowledge and work in the field of front-end development. 
@@ -61,7 +62,7 @@
       <section class="item">
         <div class="heading-content">
           <p class="heading-number">3</p>
-          <h2><a name="skills">Skills</a></h2>
+          <h2><a id="skills">Skills</a></h2>
         </div>
         <ul class="text">  
           <li>HTML</li>	
@@ -73,54 +74,55 @@
       <section class="item">
         <div class="heading-content">
           <p class="heading-number">4</p>
-          <h2><a name="сode">Code Examples</a></h2>
+          <h2><a id="сode">Code Examples</a></h2>
         </div>
-        <div class="text">
-          <pre>
-  function toCamelCase(str){
-    if (!str) {
-      return '';
-    }
-  const strRepl = str.replace(/_/g, '-')
-  const arr = strRepl.split('-');
-  const newArr = arr.map((currentValue, index) =>
-    index === 0 ? currentValue :
-    currentValue[0].toUpperCase() +
-    currentValue.slice(1));
-  const newStr = newArr.join('');
-  return newStr;
-  }           
-          </pre>
-        </div>
+        <pre class="text">
+          function toCamelCase(str){
+            if (!str) {
+              return '';
+            }
+          const strRepl = str.replace(/_/g, '-')
+          const arr = strRepl.split('-');
+          const newArr = arr.map((currentValue, index) =>
+            index === 0 ? currentValue :
+            currentValue[0].toUpperCase() +
+            currentValue.slice(1));
+          const newStr = newArr.join('');
+          return newStr;
+          }           
+        </pre>
         <div class="link-to-cv">Link to project <a href="#">CV</a></div>
       </section>
       <section class="item">
         <div class="heading-content">
           <p class="heading-number">5</p>
-          <h2><a name="education">Education</a></h2>
+          <h2><a id="education">Education</a></h2>
         </div>
         <p class="text">Belarusian National Technical University</p>
       </section>  
       <section class="item">
         <div class="heading-content">
           <p class="heading-number">6</p>
-          <h2><a name="languages">Languages</a></h2>
+          <h2><a id="languages">Languages</a></h2>
         </div>
         <ul class="text">
           <li>Russian - native speaker</li>	
           <li>English (in process…)</li>
         </ul>        
       </section>  
-    </div>
-   
+    </div>  
   </main>
+  
   <footer>
     <div class="footer-wrapper">
       <p class="footer-text">2022</p>
+      <div class="link-to-cv">Link to <a href="https://github.com/AllaKakhanovich">GitHub</a></div>
       <div class="footer-img">
-        <p><a href="https://rs.school/js-stage0/">
+        <a href="https://rs.school/js-stage0/">
           <img class="footer-logo" src="https://app.rs.school/static/images/logo-rsschool3.png" 
-          alt="Logo RS school"></a></p>
+          alt="Logo RS school">
+        </a>
+      </div>
     </div>
   </footer>
 </body>
