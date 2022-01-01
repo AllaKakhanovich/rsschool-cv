@@ -1,0 +1,182 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 100%;
+  min-width: 560px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+.header-wrapper {
+  width: 1140px;
+  min-width: 540px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
+.nav-button .item {
+  width: 24px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+  cursor: pointer;
+}
+.nav-button {
+ display: none;
+ cursor: pointer;
+}
+.nav-list {
+  display: flex; 
+  align-self: center;
+  list-style-type: none;
+}
+.nav-list .item a {
+  color: #111111;
+  padding: 10px 10px;
+}
+.nav-list .item a:hover {
+  color:rgb(202, 101, 82);
+}
+.header-avatar {
+  border-radius: 50%;  
+}
+.header-img {
+  width: 64px; 
+}
+
+main {
+  min-height: calc(100vh - 80px);
+  min-width: 560px;
+  background-image: url(https://img1.goodfon.ru/wallpaper/nbig/1/1a/tekstura-linii-color-fon.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px; 
+}
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  width: 1140px;
+}
+.content-wrapper .item {
+  padding: 50px 30px 40px 30px;
+  font-family: "Open Sans", sans-serif; 
+  font-size: 16px;
+  line-height: 26px;
+  width: 560px;
+  background:rgba(255, 255, 255, 0.74);
+  min-height: 320px;
+}
+.content-wrapper .item:nth-child(-n+4) {
+  margin-bottom: 20px;
+}
+.heading-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 28px;
+}
+.heading-number {
+  color: #111111;
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  margin-right: 20px;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: #ca6552; 
+}
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #ca6552; 
+}
+.content-wrapper .text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 34px;
+}
+.link-to-cv a {
+  border-bottom: 2px solid #333232;
+  color: #2c2b2b;
+  padding-bottom: 1px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 100%;
+  min-width: 560px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+.footer-wrapper {
+  width: 1140px;
+  min-width: 540px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-logo {
+  height: 30px;
+}
+@media (max-width: 1198px) {
+  .content-wrapper,
+  .footer-wrapper,
+  .header-wrapper {
+    width: 940px;
+  }
+  .content-wrapper .item {
+    width: calc(100%/2 - 20px);
+  }
+}
+@media (max-width: 1008px) { 
+  .nav-list {
+  display: none;
+  }
+  .nav-button {
+  display: initial;
+  }
+} 
+ @media (max-width: 990px) {
+  .content-wrapper,
+  .footer-wrapper,
+  .header-wrapper {
+    width: 720px;
+  }
+  .content-wrapper .item {
+    padding: 30px;
+    width: calc(100%/2 - 10px);
+  }
+} 
+@media (max-width: 776px) {
+  .content-wrapper,
+  .footer-wrapper,
+  .header-wrapper {
+    width: 540px;
+  }
+  .content-wrapper .item {
+    width: calc(100% - 10px);
+  }
+  .content-wrapper .item:nth-child(-n+5) {
+    margin-bottom: 20px;
+  }
+}
+
+
